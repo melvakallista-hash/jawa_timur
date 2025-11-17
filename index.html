@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Provinsi Jawa Timur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Reset */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#05070a;
+      color:#dfffee;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      overflow-x:hidden;
+    }
+
+    /* Header / Nav */
+    header{position:sticky;top:0;z-index:50;background:linear-gradient(90deg,rgba(0,0,0,0.25),rgba(0,0,0,0.35));backdrop-filter:blur(6px);border-bottom:1px solid rgba(0,255,157,0.08)}
+    .container{max-width:1200px;margin:0 auto;padding:18px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{font-family:'Orbitron',sans-serif;color:#00ffd1;font-size:1.4rem;text-shadow:0 0 12px rgba(0,255,209,0.12)}
+    nav{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap}
+    nav a{color:#8fffe0;padding:8px 12px;border:1px solid rgba(0,255,157,0.12);border-radius:10px;text-decoration:none;font-weight:600}
+    nav a:hover{box-shadow:0 0 18px rgba(0,255,157,0.12);transform:translateY(-2px)}
+
+    /* Hero */
+    .hero{padding:48px 20px;background:radial-gradient(1200px 400px at 10% 10%,rgba(0,255,157,0.04),transparent),linear-gradient(180deg,#001018 0%,transparent 60%)}
+    .hero-grid{display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:center}
+    .hero h1{font-family:'Orbitron',sans-serif;color:#00ffc2;font-size:2.4rem;margin-bottom:8px;text-shadow:0 0 10px rgba(0,255,194,0.12)}
+    .hero p{color:#c9fff0;line-height:1.6}
+
+    /* Cards */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:28px}
+    .card{background:linear-gradient(180deg,rgba(0,255,150,0.03),rgba(0,255,150,0.01));border:1px solid rgba(0,255,150,0.06);padding:18px;border-radius:14px;box-shadow:0 6px 30px rgba(0,255,150,0.02);transition:transform .25s,box-shadow .25s}
+    .card:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,255,150,0.06)}
+    .card h3{font-family:'Orbitron',sans-serif;color:#8affd8;margin-bottom:8px}
+    .card p{font-size:.95rem;color:#dcfff3}
+    .card img{width:100%;height:160px;object-fit:cover;border-radius:10px;margin-top:12px}
+
+    /* Neon moving effect */
+    .neon-strip{height:6px;background:linear-gradient(90deg,#00ffd1,#00a6ff,#b300ff);box-shadow:0 0 30px #00ffd1;animation:slide 4s linear infinite}
+    @keyframes slide{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+
+    /* Infografis interaktif */
+    .infocard{display:flex;gap:16px;align-items:center;padding:14px;border-radius:12px;border:1px dashed rgba(0,255,150,0.06)}
+    .infoval{font-size:1.6rem;font-weight:700;color:#b9fff0;font-family:'Orbitron',sans-serif}
+    .infotext{font-size:.95rem}
+
+    /* Gallery modal */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+    .gallery img{width:100%;height:90px;object-fit:cover;border-radius:8px;cursor:pointer;border:1px solid rgba(255,255,255,0.03)}
+    .modal{position:fixed;inset:0;background:rgba(2,6,8,0.8);display:flex;align-items:center;justify-content:center;padding:20px;z-index:200;visibility:hidden;opacity:0;transition:opacity .2s,visibility .2s}
+    .modal.open{visibility:visible;opacity:1}
+    .modal img{max-width:100%;max-height:80vh;border-radius:10px}
+
+    /* Footer */
+    footer{padding:20px;text-align:center;border-top:1px solid rgba(0,255,157,0.04);color:#8fffe0;margin-top:48px}
+
+    /* Responsive */
+    @media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+
+    /* small UI */
+    .btn{display:inline-block;padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);cursor:pointer;background:transparent}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <div class="logo">Jawa Timur</div>
+      </div>
+      <nav>
+        <a href="#upacara">Upacara</a>
+        <a href="#bahasa">Bahasa</a>
+        <a href="#kuliner">Kuliner</a>
+        <a href="#wisata">Wisata</a>
+        
+        
+        
+      </nav>
+    </div>
+  </header>
+
+  <div class="neon-strip"></div>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <h1>Budaya & Tradisi Lokal Yang Ada Di Jawa Timur </h1>
+          <p>Jawa Timur adalah sebuah provinsi di ujung timur Pulau Jawa, Indonesia, yang beribukota di Surabaya. Provinsi ini adalah yang terluas di Pulau Jawa dan memiliki jumlah penduduk terbanyak kedua di Indonesia, terdiri dari 29 kabupaten dan 9 kota. Jawa Timur dikenal sebagai pusat perekonomian, industri, dan juga kaya akan budaya serta tempat wisata alam.  </p>
+          <div style="margin-top:12px">
+            <button class="btn" onclick="toggleDark()">Toggle Mode</button>
+            <button class="btn" onclick="showInfographic()">Tampilkan Infografis Interaktif</button>
+          </div>
+        </div>
+        <aside style="background:linear-gradient(180deg,rgba(0, 255, 157, 0.089),transparent);padding:16px;border-radius:12px">
+          <h3 style="font-family:'Orbitron'">Apasaja Yang Ada Dijawa Timur</h3>
+          <div style="margin-top:12px;display:flex;flex-direction:column;gap:8px">
+            <div class="infocard"><div class="infoval" id="stat-1">17</div><div class="infotext">Destinasi Unggulan</div></div>
+            <div class="infocard"><div class="infoval" id="stat-2">30+</div><div class="infotext">Kuliner Tradisional</div></div>
+            <div class="infocard"><div class="infoval" id="stat-3">3</div><div class="infotext">Bahasa/Dialek Utama</div></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- UPACARA -->
+    <section id="upacara">
+      <h2>Upacara Adat</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Kasada — Tengger (Gunung Bromo)</h3>
+          <p>Persembahan masyarakat Tengger kepada leluhur,dilakukan tiap tahun dikawah.</p>
+          <img src="upacara kasada.jpg" alt="Upacara Kasada Bromo">
+        </div>
+
+        <div class="card">
+          <h3>Reog Ponorogo</h3>
+          <p>Pertunjukan bertopeng Singo Barong yang sarat simbolisme kepemimpinan dan keberanian.</p>
+          <img src="reog.avif" alt="Reog Ponorogo">
+        </div>
+
+        <div class="card">
+          <h3>Larung Sesaji (Pelestarian Laut)</h3>
+          <p>Tradisi nelayan pesisir Jawa Timur untuk menjaga keselamatan dan hasil tangkapan.</p>
+          <img src="larung ssaji.jpeg" alt="Larung Sesaji">
+        </div>
+      </div>
+    </section>
+
+    <!-- BAHASA -->
+    <section id="bahasa" style="margin-top:34px">
+      <h2>Bahasa Daerah</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Bahasa Jawa Dialek "Arek" (Surabaya dkk)</h3>
+          <p>Dialek cepat, tegas, dan sering dipakai di wilayah pesisir utara.</p>
+          <img src="jatim.jpg" alt="Bahasa Jawa Arek">
+        </div>
+
+        <div class="card">
+          <h3>Bahasa Madura</h3>
+          <p>Bahasa yang kuat dan khas, ditemui luas di Madura dan pesisir Jawa Timur.</p>
+          <img src="madura.jpg" alt="Bahasa Madura">
+        </div>
+
+        <div class="card">
+          <h3>Bahasa Osing (Banyuwangi)</h3>
+          <p>Dialek unik yang kaya kosakata lokal dan pengaruh Jawa—dipertahankan lewat seni dan ritual.</p>
+          <img src="madura.jpg" alt="Bahasa Osing Banyuwangi">
+        </div>
+      </div>
+    </section>
+
+    <!-- KULINER -->
+    <section id="kuliner" style="margin-top:34px">
+      <h2>Kuliner Tradisional</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Rawon (Surabaya/Malang)</h3>
+          <p>Sup kluwek dengan cita rasa pekat. Disajikan dengan sayuran an sambel.</p>
+          <img src="rawon.jpeg" alt="Rawon">
+        </div>
+
+        <div class="card">
+          <h3>Rujak Cingur (Surabaya)</h3>
+          <p>Campuran buah & sayur dengan cingur sapi—bumbu petis khas memberi rasa unik.</p>
+          <img src="rujak cingur.webp" alt="Rujak Cingur">
+        </div>
+
+        <div class="card">
+          <h3>Pecel Madiun</h3>
+          <p>Sayuran rebus dengan sambal kacang yang aromatik—khas Madiun.</p>
+          <img src="pecel.jpg" alt="Pecel Madiun">
+        </div>
+      </div>
+    </section>
+
+    <!-- WISATA -->
+    <section id="wisata" style="margin-top:34px">
+      <h2>Pariwisata Daerah</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Gunung Bromo</h3>
+          <p>Sunrise spektakuler, lautan pasir, dan budaya Tengger.</p>
+          <img src="bromo.jpeg" alt="Gunung Bromo">
+        </div>
+
+        <div class="card">
+          <h3>Kawah Ijen (Blue Fire)</h3>
+          <p>Fenomena api biru yang langka—destinasi alam dan tambang belerang unik.</p>
+          <img src="kawah ijen.jpg" alt="Kawah Ijen">
+        </div>
+
+        <div class="card">
+          <h3>Pantai Papuma</h3>
+          <p>Pantai eksotis dengan tebing dan formasi karang yang dramatis.</p>
+          <img src="pulau papuma.jpg" alt="Pantai Papuma">
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    
+
+    <!-- PROJECT PAGE -->
+    
+
+    <!-- ABOUT -->
+    
+
+    <!-- Gallery modal -->
+    <div id="modal" class="modal" onclick="closeModal(event)">
+      <img id="modal-img" src="" alt="Preview">
+    </div>
+
+  </main>
+
+  <footer>
+    © 2025 Budaya Jawa Timur — Versi Interaktif • Dibuat untuk permintaan pengguna
+  </footer>
+
+  <script>
+    // Toggle dark/bright (simple example)
+    function toggleDark(){
+      document.body.classList.toggle('light-mode');
+      if(document.body.classList.contains('light-mode')){
+        document.body.style.background='#f6fbff';document.body.style.color='#022';
+      } else {document.body.style.background='#05070a';document.body.style.color='#dfffee'}
+    }
+
+    // Infografis interaktif (animasi number)
+    function showInfographic(){
+      animateNumber('stat-1',17,800);
+      animateNumber('stat-2',30,800);
+      animateNumber('stat-3',3,800);
+    }
+    function animateNumber(id,to,duration){
+      const el=document.getElementById(id);const start=0;const range=to-start;let startTime=null;
+      function step(timestamp){if(!startTime)startTime=timestamp;const progress=Math.min((timestamp-startTime)/duration,1);el.textContent=Math.floor(progress*range+start);if(progress<1)window.requestAnimationFrame(step);}
+      window.requestAnimationFrame(step);
+    }
+
+    // Gallery modal behavior
+    const modal=document.getElementById('modal');const modalImg=document.getElementById('modal-img');
+    document.querySelectorAll('.card img').forEach(img=>{
+      img.addEventListener('click',e=>{openModal(e.target.src,e.target.alt)})
+    });
+    function openModal(src,alt){modalImg.src=src;modalImg.alt=alt;modal.classList.add('open')}
+    function closeModal(e){if(e.target===modal || e.target===modalImg){modal.classList.remove('open')}}
+
+    // Make portfolio cards open specific galleries (example arrays)
+    const galleries={
+      bromo:[
+        'https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1508261301401-67f0d2b4b5b0?q=80&w=1200&auto=format&fit=crop'
+      ],
+      reog:[
+        'https://images.unsplash.com/photo-1546018004-3d8b3be7d4a2?q=80&w=1200&auto=format&fit=crop'
+      ],
+      kuliner:[
+        'https://images.unsplash.com/photo-1543352634-9b6f6d2b8a16?q=80&w=1200&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1532634896-26909d0d0e5c?q=80&w=1200&auto=format&fit=crop'
+      ]
+    };
+    document.querySelectorAll('[data-gallery]').forEach(card=>{
+      card.addEventListener('click',()=>{
+        const key=card.getAttribute('data-gallery');
+        const imgs=galleries[key]||[]; if(imgs.length) openModal(imgs[0]);
+      })
+    });
+
+    // small accessibility: keyboard close
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'){modal.classList.remove('open')}})
+  </script>
+</body>
+</html>
